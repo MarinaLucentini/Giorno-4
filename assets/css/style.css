@@ -7,20 +7,24 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  height: auto;
 }
+
 h1 {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
 }
 /* HEADER */
-header {
-  margin: 1.5em;
-  background-image: linear-gradient(50deg, blue, white);
+header,
+footer {
+  margin: 1em;
+  background-image: linear-gradient(50deg, #007876, #d3dafb);
   color: white;
   height: fit-content;
   padding: 1em;
-  box-sizing: content-box;
+  box-sizing: border-box;
+  text-align: center;
 }
 #logo {
   width: 50%;
@@ -46,13 +50,28 @@ nav {
 /* elementi nav */
 /* MAIN */
 main {
-  background-color: white;
-  margin: 1.5em;
-  padding: 1em;
-  box-sizing: content-box;
+  margin: 0 1em 0 1em;
 }
+section {
+  margin: 1.5em 0 1.5em 0;
+  background-color: white;
+  padding: 0.3em;
+  border: 1px solid #00000070;
+  box-shadow: 1px 5px #00000070;
+  box-sizing: border-box;
+}
+#box {
+  margin: 1em;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
 article {
   font-size: 0.9em;
+}
+section h3 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 0.5em;
 }
 article h2 {
   font-weight: 700;
@@ -74,12 +93,101 @@ p {
   margin: 0.8em;
   text-align: left;
 }
-/* ELEMENTI NEL MAIN - ARTICLE */
-
+.tag {
+  background-color: grey;
+  display: inline-block;
+  padding: 0.3em;
+  border-radius: 5px;
+}
+article ul {
+  list-style: disc;
+  margin-left: 3em;
+}
+article ol {
+  list-style: decimal;
+  margin-left: 3em;
+}
+#iframe {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  height: 100%;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
 /* TABELLE */
+table {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+}
+caption {
+  font-weight: 700;
+}
+thead {
+  margin: 0.3em;
+  padding: 1em;
+  border: 1px solid grey;
+  color: white;
+}
+
+th td {
+  text-align: center;
+}
+thead tr {
+  background-color: rgb(88, 88, 255);
+}
+thead th {
+  padding: 1em;
+  border: 1px solid grey;
+  vertical-align: text-bottom;
+  text-align: center;
+}
+.riga {
+  background-color: rgb(176, 175, 175);
+}
 
 /* FORM */
-
+.iscriviti {
+  background-color: #80808096;
+  padding: 0.3em;
+  margin: 2em;
+  text-align: center;
+}
+.iscriviti h3 {
+  font-weight: 700;
+  margin: 1em 2em 0 2em;
+}
+.iscriviti p {
+  font-size: 0.7em;
+}
+button {
+  background-color: blue;
+  color: white;
+  padding: 0.3em;
+}
+.iscriviti a {
+  text-decoration: underline;
+  color: #3d8d92;
+}
+.articoli {
+  text-align: left;
+  margin: 1em;
+}
+.data p {
+  text-align: right;
+}
 /* ELEMENTI NELL' ASIDE */
-
+footer p {
+  text-align: center;
+}
+footer {
+  background-image: linear-gradient(50deg, #007876, #06122a);
+}
+footer a {
+  color: #a745ce;
+}
 /* FOOTER */
